@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'pdf/reader'
+require_relative '../lib/pdf/reader'
 
 if ARGV.empty?
   browser = PDF::Reader.new(StringIO.new(ARGF.read))
